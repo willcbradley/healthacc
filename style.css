@@ -11,6 +11,8 @@
 
 a {
     color: #007bff;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 html {

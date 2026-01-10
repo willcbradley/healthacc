@@ -12,3 +12,21 @@ toggles.forEach(toggle => {
         content[index].classList.remove('hidden')
     })
 })
+
+window.addEventListener('keydown', e => {
+    if (e.key == 'ArrowRight' && content[1].classList.contains('hidden')) {
+        toggles.forEach(t => t.classList.remove('active'));
+        content.forEach(c => c.classList.add('hidden'));
+
+        toggles[1].classList.add('active')
+        content[1].classList.remove('hidden') 
+    }
+
+    if (e.key == 'ArrowLeft' && content[0].classList.contains('hidden')) {
+        toggles.forEach(t => t.classList.remove('active'));
+        content.forEach(c => c.classList.add('hidden'));
+
+        toggles[0].classList.add('active')
+        content[0].classList.remove('hidden') 
+    }
+})
