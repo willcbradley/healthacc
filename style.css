@@ -43,7 +43,14 @@ html {
 
 .toggle {
   color: grey;
-  margin-inline: 0.5rem;
+}
+
+.toggle-left {
+    margin-right: 0.5rem;
+}
+
+.toggle-right {
+    margin-left: 0.5rem;
 }
 
 .toggle.active {
