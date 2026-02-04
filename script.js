@@ -4,8 +4,6 @@ const essayToggle = document.querySelector('.essay-toggle')
 const essayList = document.querySelector('.essay-list')
 const essayName = window.location.pathname.slice(1)
 
-console.log(essayName)
-
 const essays = [
     "i",
     "m"
