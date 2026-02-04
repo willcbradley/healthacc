@@ -65,7 +65,6 @@ if (toggles && content && essayToggle && essayList) {
 
 if (essays.includes(essayName)) {
 
-    console.log("this is an essay!")
     window.addEventListener("keydown", e => {
         const essayIndex = essays.indexOf(essayName)
 
