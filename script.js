@@ -2,7 +2,7 @@ const toggles = document.querySelectorAll('.toggle');
 const content  = document.querySelectorAll('.content');
 const essayToggle = document.querySelector('.essay-toggle')
 const essayList = document.querySelector('.essay-list')
-const essayName = window.location.pathname.slice(1, -5)
+const essayName = window.location.pathname.slice(1)
 
 console.log(essayName)
 
