@@ -6,7 +6,8 @@ const essayName = window.location.pathname.slice(1)
 
 const essays = [
     "i",
-    "m"
+    "m",
+    "n"
 ]
 
 if (toggles && content && essayToggle && essayList) {
