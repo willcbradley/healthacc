@@ -1,17 +1,23 @@
 const toggles = document.querySelectorAll('.toggle');
 const content  = document.querySelectorAll('.content');
-const essayToggle = document.querySelector('.essay-toggle')
-const essayList = document.querySelector('.essay-list')
-const essayName = window.location.pathname.slice(1)
+const fundamentalsToggle = document.querySelector('.fundamentals-toggle')
+const fundamentalsList = document.querySelector('.fundamentals-list')
+const fieldmanualToggle = document.querySelector('.fieldmanual-toggle')
+const fieldmanualList = document.querySelector('.fieldmanual-list')
+const pageName = window.location.pathname.slice(1)
 
-const essays = [
+const fundamentals = [
     "i",
     "m",
     "n",
     "b"
 ]
 
-if (toggles && content && essayToggle && essayList) {
+const fieldmanual = [
+    "i2"
+]
+
+if (toggles && content && fundamentalsToggle && fundamentalsList) {
 
     window.addEventListener("DOMContentLoaded", (event) => {
         toggles.forEach(t => t.classList.remove('active'));
@@ -54,27 +60,49 @@ if (toggles && content && essayToggle && essayList) {
         })
     })
 
-    essayToggle.addEventListener('click', () => {
-        if (essayList.classList.contains('hidden')) {
-            essayList.classList.remove('hidden')
+    fundamentalsToggle.addEventListener('click', () => {
+        if (fundamentalsList.classList.contains('hidden')) {
+            fundamentalsList.classList.remove('hidden')
         } else {
-            essayList.classList.add('hidden')
+            fundamentalsList.classList.add('hidden')
+        }
+    })
+
+    fieldmanualToggle.addEventListener('click', () => {
+        if (fieldmanualList.classList.contains('hidden')) {
+            fieldmanualList.classList.remove('hidden')
+        } else {
+            fieldmanualList.classList.add('hidden')
         }
     })
 }
 
-if (essays.includes(essayName)) {
-
+if (fundamentals.includes(pageName)) {
     window.addEventListener("keydown", e => {
-        const essayIndex = essays.indexOf(essayName)
+        const essayIndex = fundamentals.indexOf(pageName)
 
-        if (e.key === "ArrowRight" && essayIndex < essays.length - 1) {
-            window.location.href = essays[essayIndex + 1]
+        if (e.key === "ArrowRight" && essayIndex < fundamentals.length - 1) {
+            window.location.href = fundamentals[essayIndex + 1]
+            console.log("moving to the right")
         }
 
         if (e.key === "ArrowLeft" && essayIndex > 0) {
-            window.location.href = essays[essayIndex - 1]
+            window.location.href = fundamentals[essayIndex - 1]
         }
     })
+}
 
+if (fieldmanual.includes(pageName)) {
+    window.addEventListener("keydown", e => {
+        const essayIndex = fieldmanual.indexOf(pageName)
+
+        if (e.key === "ArrowRight" && essayIndex < fieldmanual.length - 1) {
+            window.location.href = fieldmanual[essayIndex + 1]
+            console.log("moving to the right")
+        }
+
+        if (e.key === "ArrowLeft" && essayIndex > 0) {
+            window.location.href = fieldmanual[essayIndex - 1]
+        }
+    })
 }
