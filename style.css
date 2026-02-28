@@ -41,6 +41,11 @@ html {
     min-height: 100vh;
 }
 
+.button,
+.button a {
+    color: #979797;
+}
+
 .code { 
   white-space: pre-wrap;    
   word-wrap: break-word;   
@@ -78,11 +83,6 @@ html {
     transform: translateX(-50%);
     background-color: white;
     z-index: 999;
-}
-
-.footer-button {
-    text-decoration: none;
-    color: #979797;
 }
 
 .git {
