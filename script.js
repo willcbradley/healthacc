@@ -1,7 +1,5 @@
 const toggles = document.querySelectorAll('.toggle');
-const content  = document.querySelectorAll('.content');
-const fundamentalsToggle = document.querySelector('.fundamentals-toggle')
-const fundamentalsList = document.querySelector('.fundamentals-list')
+const content = document.querySelectorAll('.content');
 const pageName = window.location.pathname.slice(1)
 
 const fundamentals = [
@@ -11,7 +9,12 @@ const fundamentals = [
     "b",
     "d",
     "c",
-    "p"
+    "p",
+    "s",
+    "f",
+    "a",
+    "4",
+    "y"
 ]
 
 // check if on homepage

@@ -53,18 +53,6 @@ html {
     margin-top: 2rem;
 }
 
-.fundamentals-list,
-.fieldmanual-list {
-    margin-top: 8px;
-    margin-left: 2rem;
-}
-
-.fundamentals-toggle,
-.fieldmanual-toggle {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 .flex {
     display: flex;
 }
