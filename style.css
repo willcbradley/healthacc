@@ -99,10 +99,6 @@ html {
   display: none;
 }
 
-.homenav {
-    color: black;
-}
-
 .homenav:hover {
     text-decoration: none;
 }
