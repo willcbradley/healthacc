@@ -57,6 +57,8 @@ if (toggles && content)  {
 
             e.currentTarget.classList.add('active')
             content[index].classList.remove('hidden')
+
+            window.scrollTo(0,0);
         })
     })
 }

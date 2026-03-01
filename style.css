@@ -115,6 +115,10 @@ html {
     color: #679f69;
 }
 
+.nav div  {
+    color: black;
+}
+
 .sticky {
     position: sticky;
     background-color: #fff;
