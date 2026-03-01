@@ -1,6 +1,0 @@
-# To Do
-
-1. consistent "<- will bradley" title format between subdomains, then "health" in flex nav [done]
-2. change wording from "health" to "archive" or "fundamentals" for corresponding articles (not "projects", to avoid confusion) [done]
-3. #a and #f link handling (ID's for those specific boxes -> add/remove active/hidden as needed) [done]
-4. middle "contact" button for all archive/fundamentals [done]
