@@ -91,7 +91,6 @@ if (fundamentals.includes(pageName)) {
 
 // check if on archive page
 if (archive.includes(pageName)) {
-    console.log("archive detected")
     window.addEventListener("keydown", e => {
 
         const essayIndex = archive.indexOf(pageName)
