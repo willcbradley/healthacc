@@ -24,7 +24,7 @@ if (toggles && content)  {
         if (window.location.hash === "#p") {
             toggles[1].classList.add('active')
             content[1].classList.remove('hidden') 
-        } else if (window.location.hash === "#c") {
+        } else if (window.location.hash === "#a") {
             toggles[1].classList.add('active')
             content[1].classList.remove('hidden') 
             archiveList.classList.add('active')
