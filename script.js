@@ -12,8 +12,8 @@ for (i = 0; i <= 15; i++) {
 
 const archive = []
 
-for (i = 0; i <= 2; i++) {
-    archive.push(`c${i}`)
+for (i = 0; i <= 5; i++) {
+    archive.push(`a${i}`)
 }
 
 // check if on homepage
